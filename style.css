@@ -92,3 +92,56 @@ text-align: left;
     margin-top: 10px;
     display: none;
 }
+
+/* Existing styles... */
+
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    .card {
+        width: 95%; /* Increase width for smaller screens */
+        padding: 20px 15px; /* Adjust padding */
+        margin: 50px auto 0; /* Reduce margin */
+    }
+
+    .weather-icon {
+        width: 120px; /* Smaller icon for smaller screens */
+        margin-top: 20px;
+    }
+
+    .weather h1 {
+        font-size: 60px; /* Smaller font size */
+    }
+
+    .weather h2 {
+        font-size: 30px; /* Smaller font size */
+    }
+
+    .details {
+        flex-direction: column; /* Stack details vertically */
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .col {
+        margin-bottom: 10px; /* Add space between rows */
+    }
+
+    .search input {
+        font-size: 16px; /* Smaller font size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .search button {
+        width: 50px; /* Smaller button */
+        height: 50px;
+    }
+
+    .humidity, .wind {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    .error {
+        margin-left: 5px; /* Adjust margin */
+        font-size: 12px; /* Smaller font size */
+    }
+}
