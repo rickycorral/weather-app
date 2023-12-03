@@ -3,14 +3,21 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  
 }
-body{
-    background: #222;
+body {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    min-height: 100vh; /* This ensures that the body is at least as tall as the viewport */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(100deg, #00feba, #5b548a);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -95,95 +102,4 @@ text-align: left;
 
 /* Existing styles... */
 /* Existing styles... */
-
-/* General mobile responsiveness */
-@media (max-width: 768px) {
-    .card {
-        width: 95%; /* Increase width for smaller screens */
-        padding: 20px 15px; /* Adjust padding */
-        margin: 50px auto 0; /* Reduce margin */
-    }
-
-    .weather-icon {
-        width: 100px; /* Smaller icon for smaller screens */
-        margin-top: 20px;
-    }
-
-    .weather h1 {
-        font-size: 50px; /* Smaller font size */
-    }
-
-    .weather h2 {
-        font-size: 25px; /* Smaller font size */
-    }
-
-    .details {
-        flex-direction: column; /* Stack details vertically */
-        align-items: flex-start;
-        margin-top: 30px;
-    }
-
-    .col {
-        margin-bottom: 10px; /* Add space between rows */
-    }
-
-    .search input {
-        font-size: 16px; /* Smaller font size */
-        padding: 10px 20px; /* Adjust padding */
-    }
-
-    .search button {
-        width: 50px; /* Smaller button */
-        height: 50px;
-    }
-
-    .humidity, .wind {
-        font-size: 22px; /* Smaller font size */
-    }
-
-    .error {
-        margin-left: 5px; /* Adjust margin */
-        font-size: 12px; /* Smaller font size */
-    }
-}
-
-/* Specific adjustments for larger mobile screens like iPhone 14 Plus */
-@media (max-width: 1080px) {
-    .card {
-        width: 90%; /* Adjust width */
-        padding: 25px 20px; /* Adjust padding */
-    }
-
-    .weather-icon {
-        width: 120px; /* Adjust icon size */
-    }
-
-    .weather h1 {
-        font-size: 60px; /* Adjust font size */
-    }
-
-    .weather h2 {
-        font-size: 30px; /* Adjust font size */
-    }
-
-    .details {
-        flex-direction: row; /* Keep details in a row */
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-
-    .search input {
-        font-size: 18px; /* Adjust font size */
-        padding: 12px 25px; /* Adjust padding */
-    }
-
-    .search button {
-        width: 60px; /* Adjust button size */
-        height: 60px;
-    }
-
-    .humidity, .wind {
-        font-size: 26px; /* Adjust font size */
-    }
-}
 
