@@ -94,9 +94,10 @@ text-align: left;
 }
 
 /* Existing styles... */
+/* Existing styles... */
 
-/* Responsive styles for screens smaller than 600px */
-@media (max-width: 600px) {
+/* General mobile responsiveness */
+@media (max-width: 768px) {
     .card {
         width: 95%; /* Increase width for smaller screens */
         padding: 20px 15px; /* Adjust padding */
@@ -104,16 +105,16 @@ text-align: left;
     }
 
     .weather-icon {
-        width: 120px; /* Smaller icon for smaller screens */
+        width: 100px; /* Smaller icon for smaller screens */
         margin-top: 20px;
     }
 
     .weather h1 {
-        font-size: 60px; /* Smaller font size */
+        font-size: 50px; /* Smaller font size */
     }
 
     .weather h2 {
-        font-size: 30px; /* Smaller font size */
+        font-size: 25px; /* Smaller font size */
     }
 
     .details {
@@ -137,7 +138,7 @@ text-align: left;
     }
 
     .humidity, .wind {
-        font-size: 24px; /* Smaller font size */
+        font-size: 22px; /* Smaller font size */
     }
 
     .error {
@@ -145,3 +146,44 @@ text-align: left;
         font-size: 12px; /* Smaller font size */
     }
 }
+
+/* Specific adjustments for larger mobile screens like iPhone 14 Plus */
+@media (max-width: 1080px) {
+    .card {
+        width: 90%; /* Adjust width */
+        padding: 25px 20px; /* Adjust padding */
+    }
+
+    .weather-icon {
+        width: 120px; /* Adjust icon size */
+    }
+
+    .weather h1 {
+        font-size: 60px; /* Adjust font size */
+    }
+
+    .weather h2 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .details {
+        flex-direction: row; /* Keep details in a row */
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .search input {
+        font-size: 18px; /* Adjust font size */
+        padding: 12px 25px; /* Adjust padding */
+    }
+
+    .search button {
+        width: 60px; /* Adjust button size */
+        height: 60px;
+    }
+
+    .humidity, .wind {
+        font-size: 26px; /* Adjust font size */
+    }
+}
+
